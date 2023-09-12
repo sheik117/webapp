@@ -1,9 +1,13 @@
+import { getRandomId } from "./createResponse"
+import { faker } from "./createResponse"
+import { Faker } from "./types"
+
 // TODO: Not implemented
 const fakerMock: Faker = {
-  id,
-  answer,
-  score,
-  category,
+  id: getRandomId,
+  answer: () => "answer",
+  score: () => 2,
+  category: () => "one",
 }
 
 describe.only("Create responses", () => {
